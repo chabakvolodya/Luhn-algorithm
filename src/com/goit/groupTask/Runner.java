@@ -28,7 +28,7 @@ public class Runner {
 
                 default:
                     try {
-                        valid = MethodMoon.checkNumber(input);
+                        valid = LuhnAlgorithm.checkNumber(input);
 
                         if (valid) {
                             System.out.println("Номер правильний!");
@@ -38,6 +38,7 @@ public class Runner {
                         }
 
                     } catch (InputIsEmptyException e){
+
                         System.err.println("Ви не ввели номеру.");
                     } finally {
                         System.out.println("\n");
